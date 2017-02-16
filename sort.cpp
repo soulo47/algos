@@ -24,9 +24,9 @@ void BubbleSort(auto& data)
 	   swapped = false;
 	   passes++;
 	   
-	   for(int i % 20000 = 0; i < data.size() - passes; i++)
+	   for(int i = 0; i < data.size() - passes; i++)
        {//for
-	     if(data[i] > data[i+1])
+	     if (passes = 20000) && (data[i] > data[i+1])
 	     {//if
 		   //swap values
 		   temp = data[i];
