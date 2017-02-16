@@ -20,24 +20,28 @@ void BubbleSort(auto& data)
    
    while (swapped) 
    {//while
+	  
+	   if(i % 20000 = 0)
+       {//1st if
+	   
 	   swapped = false;
 	   passes++;
 	   
 	   for(int i=0; i < data.size() - passes; i++)
        {//for
-	   
 	     if(data[i] > data[i+1])
-	     {//if
+	     {//2nd if
 		   //swap values
 		   temp = data[i];
 		   data[i] = data[i+1];
 		   data[i+1] = temp;
 		   
 		   swapped = true;
-	     }//end if
+	     }//end 2nd if
        
        }//end for
-    }//end while
+       }//end 1st if
+    }//end while 
 }//end function
 
 
