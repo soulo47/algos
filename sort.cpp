@@ -23,10 +23,11 @@ void BubbleSort(auto& data)
 	   
 	   swapped = false;
 	   passes++;
-	   
+	   for(passes = 20000)
+	   { 
 	   for(int i = 0; i < data.size() - passes; i++)
        {//for
-	     if (passes = 20000) && (data[i] > data[i+1])
+	     if(data[i] > data[i+1])
 	     {//if
 		   //swap values
 		   temp = data[i];
@@ -35,6 +36,7 @@ void BubbleSort(auto& data)
 		   
 		   swapped = true;
           }//end if
+       }
        }//end for
     }//end while 
 }//end function
