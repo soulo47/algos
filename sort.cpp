@@ -20,11 +20,13 @@ void BubbleSort(auto& data)
    
    while (swapped) 
    {//while
-	   
+   if(passes %20000 == 0)
+   {//if
+	   cout << passes << " passes have been completed." << endl << endl;
+   }//if
 	   swapped = false;
 	   passes++;
-	   for(passes = 20000)
-	   { 
+
 	   for(int i = 0; i < data.size() - passes; i++)
        {//for
 	     if(data[i] > data[i+1])
@@ -36,7 +38,7 @@ void BubbleSort(auto& data)
 		   
 		   swapped = true;
           }//end if
-       }
+  
        }//end for
     }//end while 
 }//end function
