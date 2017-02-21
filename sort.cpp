@@ -17,6 +17,7 @@ void BubbleSort(auto& data)
    bool swapped = true;
    int passes = 0;
    string temp;
+   int remainderofpasses;
    
    while (swapped) 
    {//while
@@ -37,15 +38,18 @@ void BubbleSort(auto& data)
           }//end if
        }//end for
        
-       if(passes %20000 == 0)
+       remainderofpasses = passes%20000;
+       
+       if(remainderofpasses == 0)
         {//if
-	      cout << passes << " passes have been completed." << endl << endl;
+	      cout << passes << " passes have been completed, please wait patiently." << endl << endl;
         }//if
         
     }//end while 
 }//end function
 
-void SelectionSort(auto& data);
+
+
 
 int main()
 {
